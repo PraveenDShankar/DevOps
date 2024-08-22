@@ -1,0 +1,15 @@
+# Service for the application
+apiVersion: v1
+kind: Service
+metadata:
+  name: spring-boot-myblog
+  labels:
+    app: spring-boot-myblog
+spec:
+  ports:
+  - port: 80
+    targetPort: 8080
+    protocol: TCP
+  selector:
+    app: spring-boot-myblog
+  type: LoadBalancer
