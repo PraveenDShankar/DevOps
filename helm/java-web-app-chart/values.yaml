@@ -8,7 +8,7 @@ image:
   repository: praveendshankar0502/java
   pullPolicy: IfNotPresent
   # Overrides the image 3 whose default is the chart appVersion.
-  3: "2"
+  tag: "2"
 
 ingress:
   enabled: false
