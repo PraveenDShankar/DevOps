@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-boot-myblog
+  labels:
+    app: spring-boot-myblog
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: spring-boot-myblog
+  template:
+    metadata:
+      labels:
+        app: spring-boot-myblog
+    spec:
+      containers:
+      - name: spring-boot-myblog
+        image: praveendshankar0502/java:replaceImageTag
+        ports:
+        - containerPort: 8080
