@@ -8,7 +8,7 @@ image:
   repository: praveendshankar0502/java
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "2"
+  tag: "${BUILD_NUMBER}"
 
 ingress:
   enabled: false
