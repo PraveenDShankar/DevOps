@@ -6,7 +6,7 @@ pipeline {
     }
   }
   stages {
-  /*  stage('Build and Test') {
+    stage('Build and Test') {
       steps {
         // build the project and create a JAR file
         sh 'mvn clean package'
@@ -37,7 +37,7 @@ pipeline {
             }
         }
       }
-    } */
+    } 
     stage('Update Deployment File') {
         environment {
             GIT_REPO_NAME = "Devops"
