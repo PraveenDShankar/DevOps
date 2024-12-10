@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: spring-boot-web-app.local
+  - host: spring-boot-myblog.local
     http:
       paths: 
       - path: /
