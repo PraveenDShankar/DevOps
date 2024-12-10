@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-myblog
-        image: praveendshankar0502/java:{{ .Values.image.tag }}
+        image: praveendshankar0502/myblog:{{ .Values.image.tag }}
         ports:
         - containerPort: 8080
