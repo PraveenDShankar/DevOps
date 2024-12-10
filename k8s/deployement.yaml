@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-myblog
-        image: praveendshankar0502/java
+        image: praveendshankar0502/myblog:1
         ports:
         - containerPort: 8080
